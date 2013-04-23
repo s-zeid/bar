@@ -92,12 +92,12 @@
  </draw_ops>
  <draw_ops name="button_prelight">
   <include name="button_bg_prelight"/>
-  <rectangle color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.8"
+  <rectangle color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
 	     x="11" y="2" width="1" height="1"/>
  </draw_ops>
  <draw_ops name="button_pressed">
   <include name="button_bg_pressed"/>
-  <rectangle color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.8"
+  <rectangle color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
 	     x="11" y="2" width="1" height="1"/>
  </draw_ops>
 
