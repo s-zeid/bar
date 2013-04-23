@@ -13,4 +13,4 @@ Released under the GNU General Public License, version 2 or later.
 
 (Note:  On GNOME 3.6.3 on Fedora 18, I had to install the theme to
 `/usr/share/themes/` as opposed to `~/.themes/` for Mutter to recognize it. 
-YMMV.)
+YMMV and WTF.)
