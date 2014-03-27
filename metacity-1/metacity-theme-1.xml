@@ -92,68 +92,68 @@
  </draw_ops>
  <draw_ops name="button_prelight">
   <include name="button_bg_prelight"/>
-  <rectangle color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
+  <rectangle color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.2"
 	     x="11" y="2" width="1" height="1"/>
  </draw_ops>
  <draw_ops name="button_pressed">
   <include name="button_bg_pressed"/>
-  <rectangle color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
+  <rectangle color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.2"
 	     x="11" y="2" width="1" height="1"/>
  </draw_ops>
 
  <!-- Minimize button -->
  <draw_ops name="minimize_button_prelight">
   <include name="button_bg_prelight"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.2"
 	x1="9" y1="4" x2="15" y2="4" width="1"/>
  </draw_ops>
  <draw_ops name="minimize_button_pressed">
   <include name="button_bg_pressed"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.2"
 	x1="9" y1="4" x2="15" y2="4" width="1"/>
  </draw_ops>
 
  <!-- Shade button (can't get it to work right now) -->
  <draw_ops name="shade_button_prelight">
   <include name="button_bg_prelight"/>
-  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.2"
 	x1="9" y1="1" x2="15" y2="1" width="1"/>
  </draw_ops>
  <draw_ops name="shade_button_pressed">
   <include name="button_bg_pressed"/>
-  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.2"
 	x1="9" y1="1" x2="15" y2="1" width="1"/>
  </draw_ops>
 
  <!-- Maximize button -->
  <draw_ops name="maximize_button_prelight">
   <include name="button_bg_prelight"/>
-  <rectangle color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <rectangle color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.2"
 	x="9" y="1" width="5" height="3"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.2"
 	x1="9" y1="2" x2="15" y2="2" width="1"/>
  </draw_ops>
  <draw_ops name="maximize_button_pressed">
   <include name="button_bg_pressed"/>
-  <rectangle color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <rectangle color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.2"
 	x="9" y="1" width="5" height="3"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.2"
 	x1="9" y1="2" x2="15" y2="2" width="1"/>
  </draw_ops>
 
  <!-- Close button -->
  <draw_ops name="close_button_prelight">
   <include name="button_bg_prelight"/>
-  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.2"
 	x1="9" y1="0" x2="14" y2="5" width="1"/>
-  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.2"
 	x1="9" y1="5" x2="14" y2="0" width="1"/>
  </draw_ops>
  <draw_ops name="close_button_pressed">
   <include name="button_bg_pressed"/>
-  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.2"
 	x1="9" y1="0" x2="14" y2="5" width="1"/>
-  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.2"
 	x1="9" y1="5" x2="14" y2="0" width="1"/>
  </draw_ops>
 

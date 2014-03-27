@@ -49,14 +49,14 @@
 
  <draw_ops name="title_bg">
   <gradient type="vertical" x="0" y="0" width="width" height="height">
-   <color value="gtk:custom(theme_bg_dark_color,gtk:bg[NORMAL])"/>
-   <color value="gtk:custom(theme_bg_dark_color,gtk:bg[NORMAL])"/>
+   <color value="gtk:custom(menubar_bg_color,gtk:bg[NORMAL])"/>
+   <color value="gtk:custom(menubar_bg_color,gtk:bg[NORMAL])"/>
   </gradient>
  </draw_ops>
  <draw_ops name="title_bg_focused">
   <gradient type="vertical" x="0" y="0" width="width" height="height">
-   <color value="gtk:bg[SELECTED]"/>
-   <color value="gtk:bg[SELECTED]"/>
+   <color value="gtk:custom(link_color,gtk:bg[SELECTED])"/>
+   <color value="gtk:custom(link_color,gtk:bg[SELECTED])"/>
   </gradient>
  </draw_ops>
  <draw_ops name="title_normal"><include name="title_bg"/></draw_ops>
@@ -68,168 +68,168 @@
  <draw_ops name="button_bg_focused"><include name="title_bg_focused"/></draw_ops>
  <draw_ops name="button_bg_prelight">
   <gradient type="vertical" x="0" y="0" width="width" height="height">
-   <color value="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.8"/>
-   <color value="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.8"/>
+   <color value="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.8"/>
+   <color value="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.8"/>
   </gradient>
  </draw_ops>
  <draw_ops name="button_bg_pressed">
   <gradient type="vertical" x="0" y="0" width="width" height="height">
-   <color value="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.6"/>
-   <color value="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.6"/>
+   <color value="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.6"/>
+   <color value="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.6"/>
   </gradient>
  </draw_ops>
 
  <!-- Generic "dot" button -->
  <draw_ops name="button_unfocused">
   <include name="button_bg"/>
-  <rectangle color="blend/gtk:custom(theme_fg_dark_color,gtk:fg[NORMAL])/gtk:custom(theme_bg_dark_color,gtk:bg[NORMAL])/0.9"
+  <rectangle color="blend/gtk:custom(menubar_fg_color,gtk:fg[NORMAL])/gtk:custom(menubar_bg_color,gtk:bg[NORMAL])/0.9"
 	     x="11" y="2" width="1" height="1"/>
  </draw_ops>
  <draw_ops name="button_focused">
   <include name="button_bg_focused"/>
-  <rectangle color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.8"
+  <rectangle color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.8"
 	     x="11" y="2" width="1" height="1"/>
  </draw_ops>
  <draw_ops name="button_prelight">
   <include name="button_bg_prelight"/>
-  <rectangle color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
+  <rectangle color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	     x="11" y="2" width="1" height="1"/>
  </draw_ops>
  <draw_ops name="button_pressed">
   <include name="button_bg_pressed"/>
-  <rectangle color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
+  <rectangle color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	     x="11" y="2" width="1" height="1"/>
  </draw_ops>
 
  <!-- Shade button -->
  <draw_ops name="shade_button_prelight">
   <include name="button_bg_prelight"/>
-  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="9" y1="1" x2="15" y2="1" width="1"/>
  </draw_ops>
  <draw_ops name="shade_button_pressed">
   <include name="button_bg_pressed"/>
-  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="9" y1="1" x2="15" y2="1" width="1"/>
  </draw_ops>
 
  <!-- Unshade button -->
  <draw_ops name="unshade_button_prelight">
   <include name="button_bg_prelight"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="9" y1="1" x2="15" y2="1" width="1"/>
-  <rectangle color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <rectangle color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x="9" y="3" width="5" height="1"/>
  </draw_ops>
  <draw_ops name="unshade_button_pressed">
   <include name="button_bg_pressed"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="9" y1="1" x2="15" y2="1" width="1"/>
-  <rectangle color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <rectangle color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x="9" y="3" width="5" height="1"/>
  </draw_ops>
 
  <!-- Above button -->
  <draw_ops name="above_button_prelight">
   <include name="button_bg_prelight"/>
-  <rectangle color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <rectangle color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x="9" y="1" width="6" height="4" filled="true"/>
  </draw_ops>
  <draw_ops name="above_button_pressed">
   <include name="button_bg_pressed"/>
-  <rectangle color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <rectangle color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x="9" y="1" width="6" height="4" filled="true"/>
  </draw_ops>
 
  <!-- Unabove button -->
  <draw_ops name="unabove_button_prelight">
   <include name="button_bg_prelight"/>
-  <rectangle color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <rectangle color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x="9" y="1" width="5" height="3"/>
  </draw_ops>
  <draw_ops name="unabove_button_pressed">
   <include name="button_bg_pressed"/>
-  <rectangle color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <rectangle color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x="9" y="1" width="5" height="3"/>
  </draw_ops>
 
  <!-- Stick button -->
  <draw_ops name="stick_button_prelight">
   <include name="button_bg_prelight"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="9" y1="1" x2="9" y2="5" width="1"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="9" y1="2" x2="15" y2="2" width="1"/>
  </draw_ops>
  <draw_ops name="stick_button_pressed">
   <include name="button_bg_pressed"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="9" y1="1" x2="9" y2="5" width="1"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="9" y1="2" x2="15" y2="2" width="1"/>
  </draw_ops>
 
  <!-- Unstick button -->
  <draw_ops name="unstick_button_prelight">
   <include name="button_bg_prelight"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="12" y1="1" x2="12" y2="5" width="1"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="12" y1="2" x2="15" y2="2" width="1"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="15" y1="1" x2="15" y2="4" width="1"/>
  </draw_ops>
  <draw_ops name="unstick_button_pressed">
   <include name="button_bg_pressed"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="12" y1="1" x2="12" y2="5" width="1"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="12" y1="2" x2="15" y2="2" width="1"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="15" y1="1" x2="15" y2="4" width="1"/>
  </draw_ops>
 
  <!-- Minimize button -->
  <draw_ops name="minimize_button_prelight">
   <include name="button_bg_prelight"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="9" y1="4" x2="15" y2="4" width="1"/>
  </draw_ops>
  <draw_ops name="minimize_button_pressed">
   <include name="button_bg_pressed"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="9" y1="4" x2="15" y2="4" width="1"/>
  </draw_ops>
 
  <!-- Maximize button -->
  <draw_ops name="maximize_button_prelight">
   <include name="button_bg_prelight"/>
-  <rectangle color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <rectangle color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x="9" y="1" width="5" height="3"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="9" y1="2" x2="15" y2="2" width="1"/>
  </draw_ops>
  <draw_ops name="maximize_button_pressed">
   <include name="button_bg_pressed"/>
-  <rectangle color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <rectangle color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x="9" y="1" width="5" height="3"/>
-  <line color="blend/gtk:fg[SELECTED]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="9" y1="2" x2="15" y2="2" width="1"/>
  </draw_ops>
 
  <!-- Close button -->
  <draw_ops name="close_button_prelight">
   <include name="button_bg_prelight"/>
-  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="9" y1="0" x2="14" y2="5" width="1"/>
-  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="9" y1="5" x2="14" y2="0" width="1"/>
  </draw_ops>
  <draw_ops name="close_button_pressed">
   <include name="button_bg_pressed"/>
-  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="9" y1="0" x2="14" y2="5" width="1"/>
-  <line color="blend/gtk:fg[NORMAL]/gtk:bg[SELECTED]/0.3"
+  <line color="blend/gtk:fg[NORMAL]/gtk:custom(link_color,gtk:bg[SELECTED])/0.2"
 	x1="9" y1="5" x2="14" y2="0" width="1"/>
  </draw_ops>
 
